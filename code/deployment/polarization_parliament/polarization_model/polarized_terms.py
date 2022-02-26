@@ -79,8 +79,8 @@ def create_polarization_correlation(df):
 
     return df
 
-def apply_polarization_model(declaracoes2,right,left):
-    dfg3=create_frequency_table_grams(n_gram=3, indf=declaracoes2, right_parties=right, left_parties=left)
+def apply_polarization_model(declaracoes2):
+    dfg3=create_frequency_table_grams(n_gram=3, indf=declaracoes2)
     dfg3['pearson_quad']=calculate_pearson(dfg3)
     trigrams_table=dfg3[dfg3.pearson_quad>0]
     trigrams_table=create_phrase_partisanship(trigrams_table)

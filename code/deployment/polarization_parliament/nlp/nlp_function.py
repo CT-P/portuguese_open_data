@@ -169,14 +169,7 @@ def create_grams(df_frame, n):
     df_frame['tri_grams'] = df_frame['normalized_tokens'].apply(lambda x: generate_N_grams(x,n))
     return df_frame
 
-def apply_polarization_model(declaracoes2,right,left):
-    dfg3=create_frequency_table_grams(n_gram=3, indf=declaracoes2, right_parties=right, left_parties=left)
-    dfg3['pearson_quad']=calculate_pearson(dfg3)
-    trigrams_table=dfg3[dfg3.pearson_quad>0]
-    trigrams_table=create_phrase_partisanship(trigrams_table)
-    trigrams_table=create_polarization_correlation(trigrams_table)
-    final_df = trigrams_table.sort_values(by=['gram_partisanship'], ascending=False)
-    return final_df
+
 
 def create_200r(df_mainf):
     indexes_no_applause=[n for n,x in enumerate(df_mainf.phrase) if 'aplausos' not in x]
