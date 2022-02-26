@@ -12,6 +12,7 @@ __pycache__/
 *.xlsx
 
 # Distribution / packaging
+.vscode/
 .Python
 build/
 develop-eggs/
