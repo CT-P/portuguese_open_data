@@ -9,6 +9,7 @@ __pycache__/
 #  files
 *.pkl
 *.csv
+*.xlsx
 
 # Distribution / packaging
 .Python
