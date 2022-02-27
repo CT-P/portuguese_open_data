@@ -11,7 +11,8 @@ __pycache__/
 *.csv
 *.xlsx
 
-.delete_later/*
+delete_later/
+vscode/
 # Distribution / packaging
 .vscode/*
 !.vscode/settings.json
