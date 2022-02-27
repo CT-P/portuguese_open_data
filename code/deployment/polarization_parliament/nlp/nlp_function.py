@@ -181,7 +181,7 @@ def create_200r(df_mainf):
 def add_url_finaldf(df_final200,declaracoes2):
     tri_final=df_final200
     tri_final['reference'] = [[]] * tri_final.shape[0]
-    for n,x in enumerate(tri_final.phrase):
+    for n,x in enumerate(df_final200.phrase):
         a=[i.count(x) for i in declaracoes2.tri_grams]
         indexes=np.where(np.array(a) >= 3)[0]
         list_links=[]

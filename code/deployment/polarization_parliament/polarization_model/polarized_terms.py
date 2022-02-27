@@ -87,3 +87,11 @@ def apply_polarization_model(declaracoes2):
     trigrams_table=create_polarization_correlation(trigrams_table)
     final_df = trigrams_table.sort_values(by=['gram_partisanship'], ascending=False)
     return final_df
+
+def apply_shared_issues(declaracoes2):
+    dfg3=create_frequency_table_grams(n_gram=3, indf=declaracoes2)
+    trigrams_table=create_phrase_partisanship(dfg3)
+    trigrams_table=create_polarization_correlation(trigrams_table)
+    final_df=trigrams_table[((trigrams_table.f_right!=0) & (trigrams_table.f_left!=0)) ]
+    final_df = trigrams_table.sort_values(by=['gram_partisanship'], ascending=False)
+    return final_df
