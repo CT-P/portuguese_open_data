@@ -10,8 +10,8 @@ __pycache__/
 delete_later/
 
 #  files
-*.pkl
-*.csv
+#*.pkl
+#*.csv
 # Distribution / packaging
 .Python
 build/
