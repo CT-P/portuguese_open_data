@@ -8,9 +8,11 @@ __pycache__/
 
 #draft
 delete_later/
-
+twitter_scrapping/
 #  files
-#*.pkl
+*.pkl
+temp_df/dftok.pkl
+temp_df/dialogsDF.pkl
 #*.csv
 # Distribution / packaging
 .Python
