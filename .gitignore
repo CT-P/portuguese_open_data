@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+#draft
+delete_later/
+
 #  files
 *.pkl
 *.csv
