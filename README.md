@@ -1,6 +1,6 @@
 
 
-Discourse Polarization Index - Analysis Of Top-Down And Ground-Up Political Discourses in Portugal
+# Discourse Polarization Index - Analysis Of Top-Down And Ground-Up Political Discourses in Portugal
 
 
 An increasing number of events across the world have been a warning for democracy stability in 
@@ -22,4 +22,3 @@ discourse, considering its state and process. Portugal is used as use case, show
 polarization from 2015 to 2021, for the elite and the mass society, with similar behaviour between the 
 two groups. A semantic validation is done, and research future steps are given. 
 
-cite: 
